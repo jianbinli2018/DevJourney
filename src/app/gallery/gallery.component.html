@@ -1,0 +1,18 @@
+<div class="dash-gallery">
+  <div class="section-header">
+    <h2>Gallery</h2>
+  </div>
+  <div class="section-body" *ngIf="gallery.length > 0">
+    <ul class="grid">
+      <li *ngFor="let item of gallery" class="col-4">
+        <div class="p-card" [ngStyle]="{ 'background-color': item.itemBGC }">
+          <a routerLink="{{ item.itemUrl }}">
+            <p-card>
+              {{ item.itemName }}
+            </p-card>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

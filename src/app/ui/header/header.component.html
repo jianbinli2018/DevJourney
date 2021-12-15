@@ -1,0 +1,20 @@
+<div class="header-wrapper card(4) grid">
+  <div class="col-2 header-button">
+    <p-button
+      type="text"
+      class="center"
+      (click)="display = true"
+      icon="pi-bars"
+    ></p-button>
+  </div>
+  <div class="col-1 header-divider"></div>
+  <div class="col-9">
+    <h1>Jian Bin Li - Portfolio</h1>
+  </div>
+</div>
+
+<p-sidebar [(visible)]="display">
+  <ul>
+    <li>Test</li>
+  </ul>
+</p-sidebar>
